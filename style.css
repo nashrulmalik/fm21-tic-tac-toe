@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: sans-serif; /* Placeholder, will be updated based on the design */
+    background-color: #31383D; /* Dark background from the design */
+    color: #fff; /* Default text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 375px; /* Base width, will adjust for responsiveness */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 24px; /* Placeholder */
+    font-weight: bold;
+}
+
+/* Start Screen */
+.start-screen {
+    text-align: center;
+}
+
+.mark-selection {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.mark-selection button {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.mark-selection button.mark-x {
+    background-color: #F2B337; /* Example color */
+}
+
+.mark-selection button.mark-o {
+    background-color: #45E9E4; /* Example color */
+}
+
+.remember-info {
+    font-size: 12px;
+    color: #ccc; /* Example color */
+    margin-bottom: 20px;
+}
+
+/* Game Board */
+.game-board {
+    text-align: center;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.turn-indicator {
+    font-size: 14px;
+}
+
+.restart-button {
+    width: 30px;
+    height: 30px;
+    background-color: #DBE8ED; /* Example color */
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    /* Add refresh icon as background image */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    background-color: #DBE8ED; /* Example color */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
+}
+
+.score-board div {
+    padding: 10px;
+    background-color: #DBE8ED; /* Example color */
+    color: #31383D; /* Example color */
+    border-radius: 8px;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.primary-button {
+    background-color: #F2B337; /* Example color */
+}
+
+.secondary-button {
+    background-color: #45E9E4; /* Example color */
+}
+
+/* Modals */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #3A454D; /* Example color */
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Hover States (Example) */
+button:hover {
+    opacity: 0.8;
+}
+
+.cell:hover {
+    background-color: #cdd9df; /* Example hover color */
+}
+
+/* Responsive Design (Example) */
+@media (min-width: 768px) {
+    .container {
+        width: 500px;
+    }
+}

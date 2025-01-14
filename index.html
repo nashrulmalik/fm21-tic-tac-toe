@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO - Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">XO</div>
+        </header>
+
+        <main class="game-container">
+            <section class="start-screen">
+                <h2>PICK PLAYER 1'S MARK</h2>
+                <div class="mark-selection">
+                    <button class="mark-x" data-mark="x">X</button>
+                    <button class="mark-o" data-mark="o">O</button>
+                </div>
+                <div class="remember-info">REMEMBER : X GOES FIRST</div>
+                <button class="new-game-cpu">NEW GAME (VS CPU)</button>
+                <button class="new-game-player">NEW GAME (VS PLAYER)</button>
+            </section>
+
+            <section class="game-board hidden">
+                <div class="top-bar">
+                    <div class="logo">XO</div>
+                    <div class="turn-indicator">
+                        <span class="turn-mark"></span> TURN
+                    </div>
+                    <button class="restart-button"></button>
+                </div>
+                <div class="board">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+                </div>
+                <div class="score-board">
+                    <div class="score-x">
+                        <span class="mark">X (CPU)</span>
+                        <span class="score">0</span>
+                    </div>
+                    <div class="score-ties">
+                        <span class="mark">TIES</span>
+                        <span class="score">0</span>
+                    </div>
+                    <div class="score-o">
+                        <span class="mark">O (YOU)</span>
+                        <span class="score">0</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="modal restart-modal hidden">
+                <div class="modal-content">
+                    <h3>RESTART GAME?</h3>
+                    <div class="modal-buttons">
+                        <button class="secondary-button cancel-restart">NO, CANCEL</button>
+                        <button class="primary-button confirm-restart">YES, RESTART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal winner-modal hidden">
+                <div class="modal-content">
+                    <div class="winner-mark"></div>
+                    <h3 class="winner-text">TAKES THE ROUND</h3>
+                    <div class="modal-buttons">
+                        <button class="secondary-button quit-game">QUIT</button>
+                        <button class="primary-button next-round">NEXT ROUND</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
